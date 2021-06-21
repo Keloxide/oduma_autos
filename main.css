@@ -1,0 +1,348 @@
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+      box-sizing: border-box; 
+}
+
+body {
+    font-family: Verdana, sans-serif;
+     margin:0
+}
+
+/* Home Page Styles */
+.home-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+.home-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #424e64;
+}
+
+.home-menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 1rem;
+    padding: 0.5rem 0.5rem;
+}
+
+.home-menu-btn h1 {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.home-header-title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-header-title h1{
+    width: 60%;
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.home-header-title h2 {
+    width: 50%;
+    color: #fff;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.home-header-input {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    
+}
+
+.home-header-input form {
+    display: flex;
+}
+
+.home-header-input input {
+    width: 5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    background-color: #bbc2ca;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15%;
+}
+
+.home-header-input button {
+    width: 2rem;
+    height: 1.8rem;
+    background-color: #bbc2ca;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 15%;
+    margin-top: 2px;
+}
+
+.home-nav {
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    top: 4rem;
+    background-color: #bbc2ca;
+}
+
+.home-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.home-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin-right: 1px;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.home-nav ul li:hover {
+    background-color: #424e64;
+    color: #fff;
+}
+
+.home-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.home-section {
+    width: 100%;
+    margin-top: 6.5rem;
+    padding: 0 2%;
+}
+
+.home-section a {
+    text-decoration: none;
+    color: #a5a5a5;
+}
+
+figure.banner-car {
+    width: 100%;
+}
+
+figure.banner-car img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figure.photo {
+    margin: 1rem auto;
+    width: 80%;
+    
+}
+
+.car-section h1 {
+    font-size: 2rem;
+}
+
+.cars {
+    border-bottom: 2px solid #424e64;
+}
+
+figure.photo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+figure.photo figcaption {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.blog-section h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.article h2 {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        text-decoration: underline;
+    }
+
+.article {
+    margin-bottom: 1rem;
+}
+
+.article {
+    font-size: 1.5rem;
+}
+
+.application {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home-footer {
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424e64;
+}
+
+.home-footer a {
+    color: #a5a5a5;
+}
+
+.footer-enquires {
+    margin-right: 2rem;
+}
+
+
+/*--------- RESPONSIVE STYLES ENDS -----------*/
+
+@media (max-width: 700px) {
+     
+    .home-wrapper {
+       width: 100%;
+       height: 100vh;
+       position: relative;
+   }
+
+   .home-header {
+       width: 100%;
+       margin: 0 auto;
+       display: flex;
+   }
+
+   .home-header-title {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   }
+
+   .home-header-title h1 {
+        width: 100%;
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 0;
+    }
+
+   .home-header-title h2 {
+        width: 100%;
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 0;
+   }
+
+   .home-nav {
+       display: block;
+   }
+
+   .home-section {
+       margin-top: 6rem;
+   }
+
+}
+
+@media (min-width: 1000px){
+   
+   .rides {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .cars {
+       width: 50%;
+       border-bottom: none;
+   }
+
+   .blog-topics {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .article {
+       width: 50%;
+       font-size: 1.5rem;
+       padding-left: 1rem;
+   }
+
+   .application {
+       text-align: center;
+   }
+  
+}
+
+@media (min-width: 1500px) {
+   
+   .rides {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .cars {
+       width: 25%;
+       border-bottom: none;
+   }
+
+   .blog-topics {
+       width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .article {
+       width: 25%;
+       font-size: 1.5rem;
+       padding-left: 1rem;
+   }
+   
+}
+
+/*-----clearfix: This class forces element not to collapse*/
+.clearfix:after{
+    content:"";
+    display: table;
+    clear: both;
+}

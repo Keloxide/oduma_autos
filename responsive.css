@@ -1,0 +1,541 @@
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+
+@media only screen and (max-width: 300px) {
+    /* Tesla Cars */
+    .prev, .next,.text {font-size: 11px}
+    /* End of Tesla Cars */
+}
+
+@media (max-width: 500px) {
+    .tesla-header-title h1 {
+        width: 20%;
+    }
+
+    .tesla-header-title h2 {
+        max-width: 15rem;
+        font-size: 0.8rem;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+     /* Home */
+     .home-wrapper {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .home-header {
+        width: 100%;
+    }
+
+    .home-header-title h2 {
+        width: 80%;
+    }
+
+    .home-nav {
+        display: block;
+    }
+
+    .home-section {
+        margin-top: 6rem;
+    }
+    /* END OF HOME */
+
+    /* TESLA */
+    .tesla-header-title,
+    .toyota-header-title {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+
+    
+
+    .tesla-nav,
+    .toyota-nav {
+        width: 100%;
+        height: 3rem;
+        position: fixed;
+        top: 4rem;
+    }
+    
+    .tesla-nav ul,
+    .toyota-nav ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tesla-nav ul li,
+    .toyota-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 1px;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+
+    .tesla-directory {
+        display: none;
+    }
+
+    .tesla-models {
+      display: none;
+    }
+
+
+    .model-s-wrapper,
+    .model-x-wrapper,
+    .model-3-wrapper,
+    .model-y-wrapper {
+        margin-top: 7rem;
+    }
+
+    .s-info p,
+    .x-info p,
+    .m3-info p,
+    .y-info p {
+        line-height: 1rem;
+    }
+
+    .s-cars,
+    .x-cars,
+    .m3-cars,
+    .y-cars  {
+        width: 60%;
+        height: 50vh;
+        padding: 0.5rem;
+    }
+    
+    .s-cars img,
+    .x-cars img,
+    .m3-cars img,
+    .y-cars img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .model-s-footer nav ul,
+    .model-x-footer nav ul,
+    .model-3-footer nav ul,
+    .model-y-footer nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+   
+    .model-s-footer nav ul li,
+    .model-x-footer nav ul li,
+    .model-3-footer nav ul li,
+    .model-y-footer nav ul li {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    /* END OF TESLA */
+    
+}
+
+@media (max-width: 800px) {
+      /* TESLA CARS */
+      .tesla-header-title {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .tesla-header-title h1{
+        width: 70%;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+    } 
+    
+    .tesla-header-title h2 {
+        width: 70%;
+        margin-top: 0;
+    }
+
+      .tesla-nav {
+        width: 100%;
+        height: 3rem;
+        position: fixed;
+        top: 4rem;
+        
+    }
+    
+    .tesla-nav ul {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .tesla-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 1px;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+
+    .tesla-directory {
+        display: none;
+    }
+
+    .tesla-models {
+        display: none;
+    }
+
+    .model-s-wrapper,
+    .model-x-wrapper,
+    .model-3-wrapper,
+    .model-y-wrapper {
+        margin-top: 7rem;
+    }
+
+    .s-info p,
+    .x-info p,
+    .m3-info p,
+    .y-info p {
+        line-height: 1rem;
+    }
+
+    .model-s-footer nav ul,
+    .model-x-footer nav ul,
+    .model-3-footer nav ul,
+    .model-y-footer nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+   
+    .model-s-footer nav ul li,
+    .model-x-footer nav ul li,
+    .model-3-footer nav ul li,
+    .model-y-footer nav ul li {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+    /*END OF TESLA CARS */
+}
+
+@media (min-width: 800px) {
+    /* FORD CARS */
+    .ford-wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr min-content 3fr 1fr;
+    }
+
+    .ford-header-container {
+        grid-row: 1 / 2;
+    }
+
+    .ford-nav {
+        grid-row: 2 / 3;
+    }
+
+    .ford-content {
+        width: 100%;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: min-content 2fr;
+    }
+
+    .ford-shw {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+        background-color:  #cbdcf0;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .ford-showroom {
+        width: 100%;
+        grid-column: 2 / -1;
+        grid-row: 2 / 3;
+        /*
+        overflow: auto;
+        */
+    }
+
+    .ford-selection {
+        width: 100%;
+        padding-right: 20px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        /*
+        overflow: auto;
+        */
+    }
+
+    .ford-footer {
+        height: 100vh;
+        grid-row: 4 / -1;
+    }
+    /* End of Ford Cars Page */
+    /* TESLA CARS */
+
+    .tesla-infos a {
+        display: none;
+    }
+
+    .tesla-header-title h1{
+        width: 70%;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+    } 
+    
+    .tesla-header-title h2 {
+        width: 70%;
+        margin-top: 0;
+    }
+
+    .model-s-wrapper {
+        margin-top: 10rem;
+        padding-top: 0.5rem;
+    }
+    .model-x-wrapper {
+        margin-top: 10rem;
+        padding-top: 0.5rem;
+    }
+
+    .model-3-wrapper {
+        margin-top: 10rem;
+        padding-top: 0.5rem;
+    }
+
+    .model-y-wrapper {
+        margin-top: 10rem;
+        padding-top: 0.5rem;
+    }
+
+    .spec-btn {
+        flex-direction: row; 
+    }
+
+    .spec-btn div {
+        margin-right: 1rem;
+    }
+
+    .model-s-footer nav ul,
+    .model-x-footer nav ul,
+    .model-3-footer nav ul,
+    .model-y-footer nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+   
+    .model-s-footer nav ul li,
+    .model-x-footer nav ul li,
+    .model-3-footer nav ul li,
+    .model-y-footer nav ul li {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+    /* END OF TESLA CARS */
+  
+}
+
+@media (max-width: 1000px) {
+    /* TESLA CARS */
+    .tesla-model {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .tesla-infos p {
+        display: none;
+    }
+
+    
+    .tesla-nav {
+        top: 3.5rem;
+    }
+    
+    .tesla-nav ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tesla-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 1px;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+}
+
+@media (min-width: 1000px){
+    /* Home Page */
+    .rides {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cars {
+        width: 50%;
+        border-bottom: none;
+    }
+
+    .blog-topics {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article {
+        width: 50%;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+    .application {
+        text-align: center;
+    }
+    /* END OF HOME PAGE */
+    /* FORD CARS PAGE */
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-nav h1 {
+        margin-top: 5%;
+        margin-bottom: 15%;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 12%;
+    }
+
+    .shopping-tools {
+        margin-left: 10%;
+    }
+
+    /* TESLA CAR */
+
+    .tesla-infos p {
+        display: block;
+    }
+
+
+    .model-s-specs,
+    .model-x-specs,
+    .model-3-specs,
+    .model-y-specs {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+    }
+
+    .car-section {
+        min-width: 60%;
+    }
+
+    .spec-section {
+        min-width: 40%;
+    }
+    .spec-btn div {
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tesla-models li {
+        font-size: 1.3rem;
+    }
+
+    .tesla-infos li {
+    font-size: 1.3rem;
+}
+
+    .tesla-nav ul li {
+        font-size: 1rem;
+        
+    }
+
+}
+
+@media (min-width: 1500px) {
+    /* Home Page Responsive */
+    .rides {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .cars {
+        width: 25%;
+        border-bottom: none;
+    }
+
+    .blog-topics {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .article {
+        width: 25%;
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+    /* End of Home Page Responsive */
+}
+
+

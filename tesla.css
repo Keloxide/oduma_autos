@@ -1,0 +1,1114 @@
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+* { 
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: Verdana, sans-serif; margin:0
+}
+
+/* Tesla Sign-in Page */
+
+.sign-in-page {
+    display: none;
+    width: 100%;
+    color: #555;
+}
+
+.sign-in-header {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-logo {
+    width: 5rem;
+    cursor: pointer;
+    object-fit: cover;
+}
+
+.sign-in-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.sign-in-header h1 {
+    font-size: 2rem;
+}
+
+.sign-in-header i {
+    font-size: 1.5rem;
+}
+
+.sign-in-content {
+    max-width: 450px;
+    margin: 0 auto;
+}
+
+.sign-in-content h1 {
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+.log-in-email,
+.log-in-password {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.log-in-email input,
+.log-in-password input {
+    border: 0.5rem solid #ddd;
+    background-color: #ddd;
+    margin: 1rem 0;
+    padding: 5px;
+    height: 3rem;
+    border-radius: 4rem;
+    outline: none;
+}
+
+.log-in-email p,
+.log-in-password p {
+    padding-left: 1.5rem;
+}
+
+.sign-in-btn {
+    text-align: center;
+    background-color: #1aa1f5;
+    color: #fff;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-radius: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.forgot {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot a {
+    color: #555;
+}
+
+.forgot p {
+    margin: 0 1rem;
+}
+
+.or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.hr {
+    margin: 0 0.5rem;
+    width: 80%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.create-acc-btn {
+    text-align: center;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border: 5px solid #555;
+    border-radius: 4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sign-in-footer ul {
+    margin-top: 3rem;
+    padding: 2rem 0;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: flex-end;
+    list-style: none;
+}
+
+.sign-in-footer ul li {
+    margin-right: 1rem;
+}
+/* End of Tesla Sign-in Page */
+
+/* Tesla Cars Page Styles */
+.tesla-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.tesla-header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.tesla-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #424e64;
+}
+
+.tesla-menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+}
+
+.tesla-menu-btn h1 {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.tesla-header-title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.tesla-header-title h1{
+    width: 60%;
+    margin-bottom: 0;
+}
+
+.tesla-header-title h2 {
+    width: 50%;
+    margin-top: 0;
+}
+
+.tesla-header-input {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    
+}
+
+.tesla-header-input form {
+    display: flex;
+}
+
+.tesla-header-input input {
+    width: 5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    background-color: #bbc2ca;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15%;
+}
+
+.tesla-header-input button {
+    width: 2rem;
+    height: 1.8rem;
+    background-color: #bbc2ca;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 15%;
+    margin-top: 2px;
+}
+
+.tesla-nav {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 3.7rem;
+    background-color: #bbc2ca;
+}
+
+.tesla-nav ul {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tesla-nav ul li {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-right: 1px;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.tesla-nav ul li:hover {
+    background-color: #424e64;
+    color: #fff;
+}
+
+.tesla-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tesla-content {
+    width: 100%;
+    height: 100%; 
+    margin-top: 6.5rem;
+    position: fixed;
+    top: 0;
+}
+
+.tesla-directory {
+    background-color: #424e64;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.tesla-logo {
+    padding-left: 1rem;
+    align-items: flex-end;
+    z-index: 10;
+}
+
+.tesla-logo figure {
+    width: 6rem;  
+    cursor: pointer; 
+}
+
+.tesla-logo figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.tesla-model {
+    margin-left: auto;  
+    z-index: 10;
+}
+
+.tesla-models { 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tesla-models li {
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.tesla-info {
+    margin-left: auto;
+    padding-right: 1rem;
+    z-index: 10;
+}
+
+
+.tesla-infos {
+    display: flex;
+}
+
+.tesla-infos p,
+.tesla-infos a  {
+    margin-right: 1.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* TESLA SLIDES */
+.mySlides {
+    display: block;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+.tesla-slide-div {
+    width: 100%;
+    height: 100%;
+    margin-top: 6.5rem;
+    display: block;
+}
+
+.slideshow-container {
+  width: 100%;
+  position: fixed;
+  top: 6.5rem;
+  margin: 0 auto;
+}
+
+ .tesla-model-name {
+    color: #f2f2f2;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .tesla-model-name p {
+    margin-bottom: 0.5rem; 
+    cursor: pointer;
+  }
+
+.mySlides {
+    position: relative;
+}
+
+.tesla-model-img {
+    width: 100%;
+    height: auto;
+}
+
+.tesla-model-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    object-position: 50% 50%;
+} 
+
+.model-s p {
+    color: #424e64;
+}
+
+.model-x p {
+    color: #424e64;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 10%;
+  width: auto;
+  padding: 16px;
+  color: #424e64;
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.tesla-cars-wrapper {
+    margin-top: 10rem;
+}
+.model-s-wrapper {
+    display: none;
+    padding-top: 0.1rem;
+}
+.model-x-wrapper {
+    display: none;
+    padding-top: 0.5rem;
+}
+
+.model-3-wrapper {
+    display: none;
+    padding-top: 0.5rem;
+}
+
+.model-y-wrapper {
+    display: none;
+    padding-top: 0.5rem;
+}
+
+.model-s-img,
+.model-x-img,
+.model-y-img,
+.model-3-img {
+    width: 100%;
+    height: auto;
+}
+
+.model-s-img img,
+.model-x-img img,
+.model-y-img img,
+.model-3-img img {
+    width: 100%;
+    height: 100vh;
+    object-fit: fill;
+    object-position: 50% 50%;
+} 
+
+.model-s-title,
+.model-x-title,
+.model-3-title,
+.model-y-title {
+    color: #fff;
+    font-weight: bold;
+    z-index: -1;
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.s-plaid,
+.x-plaid,
+.y-plaid,
+.m3-plaid {
+    position: absolute;
+    top: 2rem;
+    text-align: center;
+    color: #ddd;
+}
+
+.s-plaid,
+.x-plaid {
+    color: #555;
+}
+
+.model-s-title h1,
+.model-x-title h1,
+.model-3-title h1,
+.model-y-title h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.s-header-spec,
+.x-header-spec,
+.m3-header-spec,
+.y-header-spec {
+    display: flex;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.h-spec {
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-spec p {
+    font-size: 1rem;
+}
+
+.h-spec p:first-child {
+    font-size: 1.7rem;
+}
+
+.s-h-btn,
+.x-h-btn,
+.m3-h-btn,
+.y-h-btn,
+.order-btn {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0.8rem 0;
+    padding: 0.5rem;
+    border: 0.1rem solid #fff;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.model-s-features,
+.model-x-features,
+.model-3-features,
+.model-y-features {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.model-s-features .s-content:first-child,
+.model-x-features .x-content:first-child,
+.model-3-features .m3-content:first-child,
+.model-y-features .y-content:first-child {
+    border-top:  2px solid#424e64 ;
+}
+
+
+.s-content,
+.x-content,
+.m3-content,
+.y-content {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #424e64;
+}
+
+.s-info,
+.x-info,
+.m3-info,
+.y-info {
+    width: 50%;
+    height: 50vh;
+    padding: 0.5rem;
+}
+
+.s-info h2,
+.x-info h2,
+.m3-info h2,
+.y-info h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.s-info p,
+.x-info p,
+.m3-info p,
+.y-info p {
+    margin-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.s-cars,
+.x-cars,
+.m3-cars,
+.y-cars {
+    width: 50%;
+    height: 50vh;
+    padding: 0 0.5rem;
+    object-fit: cover;
+}
+
+.s-cars img,
+.x-cars img,
+.m3-cars img,
+.y-cars img {
+    width: 100%;
+    height: 100%;
+}
+
+.car-section {
+    margin-top: 0;
+    min-width: 100%;
+    min-height: 50vh;
+    padding: 0 0.5rem;
+    object-fit: cover;
+}
+
+.car-section img {
+    width: 100%;
+    height: 100%;
+}
+
+.spec-section {
+    text-align: center;
+    padding: 1rem 0.5rem;
+}
+
+.model-s-specs,
+.model-x-specs,
+.model-3-specs,
+.model-y-specs {
+    background-color: #000;
+    color: #fff;
+   
+}
+
+.model-s-specs h1,
+.model-x-specs h1,
+.model-3-specs h1,
+.model-y-specs h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.spec-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spec-btn div {
+    width: 30rem;
+    margin: 0.8rem 0;
+    padding: 0.6rem;
+    border: 0.1rem solid #fff;
+    border-radius: 4rem;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.spec-btn div:hover {
+    color: red;
+}
+
+.spec-info {
+    display: flex;
+}
+
+.spec-info-1 {
+    width: 50%;
+}
+
+.spec-info-2 {
+    width: 50%;
+}
+
+.spec {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.2rem;
+}
+
+.spec h2 {
+    margin-bottom: 0.5rem;
+}
+
+.model-s-footer,
+.model-x-footer,
+.model-3-footer,
+.model-y-footer {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem 0.5rem;
+}
+
+.model-s-footer nav ul li,
+.model-x-footer nav ul li,
+.model-3-footer nav ul li,
+.model-y-footer nav ul li {
+    color:#424e64;
+    text-align: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+        /*--------- RESPONSIVE STYLES -----------*/
+
+
+
+        @media only screen and (max-width: 300px) {
+           
+            .prev, .next,.text {font-size: 11px}
+            
+        }
+        
+        @media (max-width: 500px) {
+            .tesla-header-title h1 {
+                width: 20%;
+            }
+        
+            .tesla-header-title h2 {
+                max-width: 15rem;
+                font-size: 0.8rem;
+            }
+           
+        }
+        
+        @media (max-width: 600px) {
+             
+            .tesla-header-title {
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #fff;
+                font-size: 1rem;
+            }
+        
+        
+            
+        
+            .tesla-nav {
+                width: 100%;
+                height: 3rem;
+                position: fixed;
+                top: 4rem;
+            }
+            
+            .tesla-nav ul {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .tesla-nav ul li {
+                width: 100%;
+                text-align: center;
+                margin-right: 1px;
+                font-size: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                list-style: none;
+                cursor: pointer;
+                transition: 1.5s;
+            }
+        
+            .tesla-directory {
+                display: none;
+            }
+        
+            .tesla-models {
+              display: none;
+            }
+        
+        
+            .model-s-wrapper,
+            .model-x-wrapper,
+            .model-3-wrapper,
+            .model-y-wrapper {
+                margin-top: 7rem;
+            }
+        
+            .s-info p,
+            .x-info p,
+            .m3-info p,
+            .y-info p {
+                line-height: 1rem;
+            }
+        
+            .s-cars,
+            .x-cars,
+            .m3-cars,
+            .y-cars  {
+                width: 60%;
+                height: 50vh;
+                padding: 0.5rem;
+            }
+            
+            .s-cars img,
+            .x-cars img,
+            .m3-cars img,
+            .y-cars img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        
+            .model-s-footer nav ul,
+            .model-x-footer nav ul,
+            .model-3-footer nav ul,
+            .model-y-footer nav ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+           
+            .model-s-footer nav ul li,
+            .model-x-footer nav ul li,
+            .model-3-footer nav ul li,
+            .model-y-footer nav ul li {
+                font-size: 1rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            
+        }
+        
+        @media (max-width: 800px) {
+              
+              .tesla-header-title {
+                width: 100%;
+                text-align: center;
+                padding: 0.5rem 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            .tesla-header-title h1{
+                width: 70%;
+                margin-bottom: 0;
+                font-size: 1.7rem;
+            } 
+            
+            .tesla-header-title h2 {
+                width: 70%;
+                margin-top: 0;
+            }
+        
+              .tesla-nav {
+                width: 100%;
+                height: 3rem;
+                position: fixed;
+                top: 4rem;
+                
+            }
+            
+            .tesla-nav ul {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+            }
+        
+            .tesla-nav ul li {
+                width: 100%;
+                text-align: center;
+                margin-right: 1px;
+                font-size: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                list-style: none;
+                cursor: pointer;
+                transition: 1.5s;
+            }
+        
+            .tesla-directory {
+                display: none;
+            }
+        
+            .tesla-models {
+                display: none;
+            }
+        
+            .model-s-wrapper,
+            .model-x-wrapper,
+            .model-3-wrapper,
+            .model-y-wrapper {
+                margin-top: 7rem;
+            }
+        
+            .s-info p,
+            .x-info p,
+            .m3-info p,
+            .y-info p {
+                line-height: 1rem;
+            }
+        
+            .model-s-footer nav ul,
+            .model-x-footer nav ul,
+            .model-3-footer nav ul,
+            .model-y-footer nav ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+           
+            .model-s-footer nav ul li,
+            .model-x-footer nav ul li,
+            .model-3-footer nav ul li,
+            .model-y-footer nav ul li {
+                font-size: 0.8rem;
+                margin-right: 0.5rem;
+            }
+            
+        }
+        
+        @media (min-width: 800px) {
+
+            .tesla-infos a {
+                display: none;
+            }
+        
+            .tesla-header-title h1{
+                width: 70%;
+                margin-bottom: 0;
+                font-size: 1.7rem;
+            } 
+            
+            .tesla-header-title h2 {
+                width: 70%;
+                margin-top: 0;
+            }
+        
+            .model-s-wrapper {
+                margin-top: 10rem;
+                padding-top: 0.5rem;
+            }
+            .model-x-wrapper {
+                margin-top: 10rem;
+                padding-top: 0.5rem;
+            }
+        
+            .model-3-wrapper {
+                margin-top: 10rem;
+                padding-top: 0.5rem;
+            }
+        
+            .model-y-wrapper {
+                margin-top: 10rem;
+                padding-top: 0.5rem;
+            }
+        
+            .spec-btn {
+                flex-direction: row; 
+            }
+        
+            .spec-btn div {
+                margin-right: 1rem;
+            }
+        
+            .model-s-footer nav ul,
+            .model-x-footer nav ul,
+            .model-3-footer nav ul,
+            .model-y-footer nav ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+           
+            .model-s-footer nav ul li,
+            .model-x-footer nav ul li,
+            .model-3-footer nav ul li,
+            .model-y-footer nav ul li {
+                font-size: 1rem;
+                margin-right: 0.5rem;
+            }
+            
+          
+        }
+        
+        @media (max-width: 1000px) {
+            
+            .tesla-model {
+                display: flex;
+                justify-content: flex-end;
+                width: 100%;
+            }
+        
+            .tesla-infos p {
+                display: none;
+            }
+        
+            
+            .tesla-nav {
+                top: 3.5rem;
+            }
+            
+            .tesla-nav ul {
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: center;
+            }
+            
+            .tesla-nav ul li {
+                width: 100%;
+                text-align: center;
+                margin-right: 1px;
+                font-size: 1rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                list-style: none;
+                cursor: pointer;
+                transition: 1.5s;
+            }
+        }
+        
+        @media (min-width: 1000px){
+
+            .tesla-infos p {
+                display: block;
+            }
+        
+        
+            .model-s-specs,
+            .model-x-specs,
+            .model-3-specs,
+            .model-y-specs {
+                width: 100%;
+                height: 100vh;
+                display: flex;
+            }
+        
+            .car-section {
+                min-width: 60%;
+            }
+        
+            .spec-section {
+                min-width: 40%;
+            }
+            .spec-btn div {
+                margin-right: auto;
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .tesla-models li {
+                font-size: 1.3rem;
+            }
+        
+            .tesla-infos li {
+            font-size: 1.3rem;
+        }
+        
+            .tesla-nav ul li {
+                font-size: 1rem;
+                
+            }
+        
+        }
+        

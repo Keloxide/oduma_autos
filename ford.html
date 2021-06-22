@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">  
+    <title>ODUMA_AUTOS | FORD CARS</title>
+    <link href="reset.css" type="text/css" rel="stylesheet">
+    <link href="ford.css" type="text/css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="ford-wrapper">
+             <!-- Page Header goes here -->   
+            <div class="ford-header-container">
+                <div class="ford-header">
+                    <div class="ford-menu-btn">
+                        <div class="ford-menu"><i class="fa fa-bars home-menu"></i></div>
+                        <h1>Menu</h1>
+                    </div>
+
+                    <div class="ford-header-title">
+                        <h1>ODUMA_AUTOS</h1>
+                        <h2>Quality you can ride in...</h2>
+                    </div>
+
+                    <div class="ford-header-input">
+                        <form>
+                            <input type="text" placeholder="search...">
+                            <button>Go</button>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+            <!-- Page Navigation goes here -->
+                <nav class="ford-nav">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li class="active-link"><a href="ford.html">FORD</a></li>
+                            <li><a href="tesla.html">TESLA</a></li>
+                            <li><a href="toyota.html">TOYOTA</a></li>
+                        </ul>
+                </nav>
+            <!-- Page Content goes here -->
+            <section class="ford-content">
+                <section  class="ford-shw">
+                        <h1>Welcome To Our Ford Showroom</h1>
+                </section>
+
+                <section class="ford-selection">
+                    <div class="model-year">
+                        <h1>Model Year</h1>
+                        <div class="model-year-btn">
+                            <button type="button">Current</button>
+                            <button type="button">Previous</button>
+                        </div>
+                    </div>
+
+                    <div class="market">
+                        <h1>Market</h1>
+                        <div class="market-chk-box">
+                            <div class="personal-vehicles">
+                                <input type="checkbox" name="personal">
+                                <label for="personal">Personal Vehicles</label>
+                            </div>
+
+                            <div class="commercial-vehicles">
+                                <input type="checkbox" name="commercial">
+                                <label for="commercial">Commercial Vehicles</label>
+                            </div>
+
+                            <div class="future-vehicles">
+                                <input type="checkbox" name="future">
+                                <label for="future">Future Vehicles</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="power-source">
+                        <h1>Power Source</h1>
+                        <p>Select one or more power sources</p>
+                        <div class="power-src-chk-box">
+                            <div class="power-col-1">
+                                <div class="gas">
+                                    <input type="checkbox" name="gas">
+                                    <label for="gas">Gas</label>
+                                </div>
+
+                                <div class="hybrid">
+                                    <input type="checkbox" name="hybrid">
+                                    <label for="hybrid">Hybrid</label>
+                                </div>
+
+                                <div class="electric">
+                                    <input type="checkbox" name="electric">
+                                    <label for="electric">Electric</label>
+                                </div>
+                            </div>
+
+                            <div class="power-col-2">
+                                <div class="eco-boost">
+                                    <input type="checkbox" name="eco-boost">
+                                    <label for="eco-boost">EcoBoost</label>
+                                </div>
+
+                                <div class="plug-in-hybrid">
+                                    <input type="checkbox" name="plug-in-hybrid">
+                                    <label for="plug-in-hybrid">Plug-in Hybrid</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="body-style">
+                        <h1>Body Style</h1>
+                        <p>Select one or more body styles</p>
+                        <div class="body-styl-chk-box">
+                            <div class="body-col-1">
+                                <div class="sedan">
+                                    <input type="checkbox" name="sedan">
+                                    <label for="sedan">Sedan</label>
+                                </div>
+
+                                <div class="convertible">
+                                    <input type="checkbox" name="convertible">
+                                    <label for="convertible">Convertible</label>
+                                </div>
+
+                                <div class="trucks">
+                                    <input type="checkbox" name="trucks">
+                                    <label for="trucks">Trucks</label>
+                                </div>
+
+                                <div class="van">
+                                    <input type="checkbox" name="van">
+                                    <label for="van">Van</label>
+                                </div>
+                            </div>
+
+                            <div class="body-col-2">
+                                <div class="hatch-back">
+                                    <input type="checkbox" name="hatch-back">
+                                    <label for="hatch-back">Hatch-Back</label>
+                                </div>
+
+                                <div class="suv">
+                                    <input type="checkbox" name="suv">
+                                    <label for="suv">Suv</label>
+                                </div>
+
+                                <div class="crossover">
+                                    <input type="checkbox" name="crossover">
+                                    <label for="crossover">Crossover</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reset-btn">
+                        <button type="button" class="reset">Reset All</button>
+                        <button type="button" class="top">Back To Top</button>
+                    </div>
+                </section>
+            
+                <section class="ford-showroom">
+                    
+                    <div class="ford-sort-wrap">
+                        <div class="ford-sort">
+                            <h2>Sort by</h2>
+                            <i class="fa fa-angle-down sort-angle-down"></i>
+                            <i class="fa fa-angle-up sort-angle-up"></i>
+                        </div>
+
+                        <div class="ford-sort-ul">
+                            <ul>
+                                <li>Price Low-High</li>
+                                <li>Price High-Low</li>
+                                <li>Body Style</li>
+                                <li>Mpg Hwy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h1 style="margin: 0.5rem 10%;">ALL VEHICLES</h1>
+
+                    <div class="ford-vehicles">
+                        <div class="suvs-crossovers">
+                            <div class="crossover-head">
+                                <h1>SUVs & Crossovers</h1>
+                                <i class="fa fa-angle-down suv-arrow-down"></i>
+                                <i class="fa fa-angle-up suv-arrow-up"></i>
+                            </div>
+                            <div class="cars crossovers">
+                                <div class="ford-cars crossover-cars crossover-visible">
+                                    <figure>
+                                        <img src="Ford Cars/2021 ECOSPORT.png" alt="2021 ECOSPORT">    
+                                        <figcaption>2021 ECOSPORT</figcaption>
+                                    </figure>
+                                    <p>Starting at $19.995</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2020 ESCAPE.jpeg" alt="2020 ESCAPE">    
+                                        <figcaption>2020 ESCAPE</figcaption>
+                                    </figure>
+                                    <p>Starting at $24.885</p>
+                                    <p>EPA-est. MPG 44 CITY / 37 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 BRONCO SPORT.jpeg" alt="2021 BRONCO SPORT">    
+                                        <figcaption>2021 BRONCO SPORT</figcaption>
+                                    </figure>
+                                    <p>Starting at $26.820</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2020 EDGE.png" alt="2020 EDGE">    
+                                        <figcaption>2020 EDGE</figcaption>
+                                    </figure>
+                                    <p>Starting at $31.100</p>
+                                    <p>EPA-est. MPG 21 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 MUSTANG MACH-E.jpeg" alt="2021 EXPLORER">    
+                                        <figcaption>2021 MUSTANG MACH-E</figcaption>
+                                    </figure>
+                                    <p>Starting at $42.895</p>
+                                    <p>EPA-est. MPG 21 CITY / 28 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 EXPENDITION.png" alt="2021 EXPENDITION">    
+                                        <figcaption>2021 EXPENDITION</figcaption>
+                                    </figure>
+                                    <p>Starting at $49.995</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars crossover-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 EXPLORER.png" alt="2021 ECOSPORT">    
+                                        <figcaption>2021 EXPLORER</figcaption>
+                                    </figure>
+                                    <p>Starting at $32.225</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="crossover-arrow">
+                                    <div class="crossover-prev">&larr;</div>
+                                    <div class="crossover-next">&rarr;</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="trucks-vans">
+                            <div class="truck-head">
+                                <h1>Trucks & Vans</h1>
+                                <i class="fa fa-angle-down t-arrow-down"></i>
+                                <i class="fa fa-angle-up t-arrow-up"></i>
+                            </div>
+
+                            <div class="cars truck">
+                                <div class="ford-cars trucks truck-visible">
+                                    <figure>
+                                        <img src="Ford Cars/2020 RANGER.png" alt="2020 RANGER">    
+                                        <figcaption>2020 RANGER</figcaption>
+                                    </figure>
+                                    <p>Starting at $24.410</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars trucks">
+                                    <figure>
+                                        <img src="Ford Cars/2021 RANGER.png" alt="2021 RANGER">    
+                                        <figcaption>2021 RANGER</figcaption>
+                                    </figure>
+                                    <p>Starting at $24.820</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars trucks">
+                                    <figure>
+                                        <img src="Ford Cars/2021 TRANSIT CONNECT.png" alt="2021 TRANSIT CONNECT">    
+                                        <figcaption>2021 TRANSIT CONNECT</figcaption>
+                                    </figure>
+                                    <p>Starting at $27.400</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars trucks">
+                                    <figure>
+                                        <img src="Ford Cars/2021 F-150.png" alt="2021 F-150">    
+                                        <figcaption>2021 F-150</figcaption>
+                                    </figure>
+                                    <p>Starting at $28.940</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars trucks">
+                                    <figure>
+                                        <img src="Ford Cars/2021 SUPER DUTY.png" alt="2021 SUPER DUTY">    
+                                        <figcaption>2021 SUPER DUTY</figcaption>
+                                    </figure>
+                                    <p>Starting at $34.230</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars trucks">
+                                    <figure>
+                                        <img src="Ford Cars/2020 TRANSIT.jpeg" alt="2020 TRANSIT">    
+                                        <figcaption>2020 TRANSIT</figcaption>
+                                    </figure>
+                                    <p>Starting at $40.180</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="truck-arrow">
+                                    <div class="truck-prev">&larr;</div>
+                                    <div class="truck-next">&rarr;</div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    
+                        <div class="saloon-cars">
+                            <div class="saloon-head">
+                                <h1>Saloon Cars</h1>
+                                <i class="fa fa-angle-down s-arrow-down"></i>
+                                <i class="fa fa-angle-up s-arrow-up"></i>
+                            </div>
+
+                            <div class="cars saloon">
+                                <div class="ford-cars saloons saloon-visible">
+                                    <figure>
+                                        <img src="Ford Cars/2020 FUSION.jpeg" alt="2020 FUSION">    
+                                        <figcaption>2020 FUSION</figcaption>
+                                    </figure>
+                                    <p>Starting at $23.170</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars saloons">
+                                    <figure>
+                                        <img src="Ford Cars/2021 MUSTANG.png" alt="2021 MUSTANG">    
+                                        <figcaption>2021 MUSTANG</figcaption>
+                                    </figure>
+                                    <p>Starting at $27.155</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="saloon-arrow">
+                                    <div class="saloon-prev">&larr;</div>
+                                    <div class="saloon-next">&rarr;</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="electrics">
+                            <div class="electric-head">
+                                <h1>Electrics</h1>
+                                <i class="fa fa-angle-down e-arrow-down"></i>
+                                <i class="fa fa-angle-up e-arrow-up"></i>
+                            </div>
+
+                            <div class="cars electric-car">
+                                <div class="ford-cars electric-cars electric-visible">
+                                    <figure>
+                                        <img src="Ford Cars/2020 FUSION  HYBRID.jpeg" alt="2020 FUSION HYBRID">    
+                                        <figcaption>2020 FUSION HYBRID</figcaption>
+                                    </figure>
+                                    <p>Starting at $28.000</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars electric-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2020 ESCAPE HYBRID.jpeg" alt="2020 ESCAPE HYBRID">    
+                                        <figcaption>2020 ESCAPE HYBRID</figcaption>
+                                    </figure>
+                                    <p>Starting at $28.265</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars electric-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 MUSTANG MACH-E.jpeg" alt="2021 MUSTANG MACH-E">    
+                                        <figcaption>2021 MUSTANG MACH-E</figcaption>
+                                    </figure>
+                                    <p>Starting at $42.895</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars electric-cars">
+                                    <figure>
+                                        <img src="Ford Cars/FORD BRONCO.jpeg" alt="2020 FORD BRONCO">    
+                                        <figcaption>2020 FORD BRONCO</figcaption>
+                                    </figure>
+                                    <p>Starting at $42.895</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="electric-arrow">
+                                    <div class="electric-prev">&larr;</div>
+                                    <div class="electric-next">&rarr;</div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="commercial-vehicles">
+                            <div class="commercial-head">
+                                <h1>Commercial Vehicles</h1>
+                                <i class="fa fa-angle-down c-arrow-down"></i>
+                                <i class="fa fa-angle-up c-arrow-up"></i>
+                            </div>
+
+                            <div class="cars commercial">
+                                <div class="ford-cars commercial-cars comercial-visible">
+                                    <figure>
+                                        <img src="Ford Cars/2021 TRANSIT CONNECT.png" alt="2021 TRANSIT CONNECT">    
+                                        <figcaption>2021 TRANSIT CONNECT</figcaption>
+                                    </figure>
+                                    <p>Starting at $24.655</p>
+                                    <p>5270 lbs max'GVWR </p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2022 E-SERIES STRIPPED CHASIS.png" alt="2022 E-SERIES STRIPPED CHASIS">    
+                                        <figcaption>2022 E-SERIES STRIPPED CHASIS</figcaption>
+                                    </figure>
+                                    <p>Starting at $30.435</p>
+                                    <p>EPA-est. MPG 27 CITY / 29 Hwy </p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2020 TRANSIT CC-CA.jpeg" alt="2020 TRANSIT CC-CA">    
+                                        <figcaption>2020 TRANSIT CC-CA</figcaption>
+                                    </figure>
+                                    <p>Starting at $30.635</p>
+                                    <p>10360 lbs max'GVWR</p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 STRIPPED CHASIS.png" alt="2021 STRIPPED CHASIS">    
+                                        <figcaption>2021 STRIPPED CHASIS</figcaption>
+                                    </figure>
+                                    <p>Starting at $31.020</p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2022 E-SERIES CUTAWAY.jpeg" alt="2022 E-SERIES CUTAWAY">    
+                                        <figcaption>2022 E-SERIES CUTAWAY</figcaption>
+                                    </figure>
+                                    <p>Starting at $33.630</p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2020 TRANSIT.jpeg" alt="2020 TRANSIT">    
+                                        <figcaption>2020 TRANSIT</figcaption>
+                                    </figure>
+                                    <p>Starting at $34.510</p>
+                                    <p>10360 lbs max GVWR</p>
+                                </div>
+
+                                <div class="ford-cars commercial-cars">
+                                    <figure>
+                                        <img src="Ford Cars/2021 CHASIS CAB.png" alt="2021 CHASIS CAB">    
+                                        <figcaption>2021 CHASIS CAB</figcaption>
+                                    </figure>
+                                    <p>Starting at $35.125</p>
+                                    <p>19500 lbs max GVWR</p>
+                                </div>
+
+                                <div class="commercial-arrow">
+                                    <div class="commercial-prev">&larr;</div>
+                                    <div class="commercial-next">&rarr;</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> 
+            </section> 
+
+            <!-- Page Footer goes here -->
+            <section class="ford-footer">
+                <div class="footer-nav">
+                    <div class="all-vehicles nav-1">
+                        <h1>All Vehicles</h1>
+                        <ul>
+                            <li>Suvs & Crossovers</li>
+                            <li>Trucks & Vans</li>
+                            <li>Cars</li>
+                            <li>Electrified</li>
+                            <li>Commercial Vehicles</li>
+                            <li>Future Vehicles</li>
+                            <li>Ford Used Vehicles</li>
+                            <li>Fleet Vehicles</li>
+                            <li>All Vehicles</li>
+                            <li>Performance Vehicles</li>
+                        </ul>
+                    </div>
+                    <div class="shopping-tools nav-2">
+                        <h1>Shopping Tools</h1>
+                        <ul>
+                            <li>Build & Price</li>
+                            <li>Search Inventory</li>
+                            <li>Get a Quote</li>
+                            <li>Pricing & Incentives</li>
+                            <li>Trade-in Value</li>
+                            <li>Get a Brochure</li>
+                            <li>Compare Vehicles</li>
+                            <li>Get Updates</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="enquires">
+                    <p>ODUMA_AUTOS &copy;2021</p>
+                    <a href="tel:08132823006">Dial: 08132823006</a>
+                </div>      
+            </section>
+
+            
+        </div>
+        <script src="ford.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,1020 @@
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+/*  apply a natural box layout model to all elements  */
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.toyota-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.toyota-header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.toyota-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #424e64;
+}
+
+.toyota-menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+}
+
+.toyota-menu-btn h1 {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.toyota-header-title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.toyota-header-title h1{
+    width: 60%;
+    margin-bottom: 0;
+}
+
+.toyota-header-title h2 {
+    width: 50%;
+    margin-top: 0;
+}
+
+.toyota-header-input {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    
+}
+
+.toyota-header-input form {
+    display: flex;
+}
+
+.toyota-header-input input {
+    width: 5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    background-color: #bbc2ca;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15%;
+}
+
+.toyota-header-input button {
+    width: 2rem;
+    height: 1.8rem;
+    background-color: #bbc2ca;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 15%;
+    margin-top: 2px;
+}
+
+.toyota-nav {
+    width: 100%;
+    height: 3rem;
+    position: fixed;
+    top: 3.7rem;
+    background-color: #bbc2ca;
+    z-index: 1;
+}
+
+.toyota-nav ul {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.toyota-nav ul li {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    margin-right: 1px;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.toyota-nav ul li:hover {
+    background-color: #424e64;
+    color: #fff;
+}
+
+.toyota-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.content-wrapper {
+    margin-top: 7rem;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-top: 2%;
+}
+
+.toyota-directory {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directory-logo {
+    display: flex;
+}
+
+.toyota-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.toyota-logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.usa-logo {
+    margin-left: 1rem;
+    display: flex;
+    width: 4.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-left: 3px solid black;
+}
+
+.usa-logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.directory-icon {
+    display: flex;
+}
+
+.directory-icon i {
+    padding-right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.toyota-slide {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;    
+}
+
+.mySlides {
+    display : none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+}
+
+.next {
+    margin: 0;
+    padding: 0;
+    right: 0.5rem;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    margin: 0;
+    padding: 0;
+    left: 0.5rem;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -22%;
+    width: 10px;
+    padding: 16px;
+    color:red;
+    background-color: rgba(231, 224, 224, 0.8);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(39, 21, 21, 0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: red;
+}
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s ;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from { opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from { opacity: .4}
+    to {opacity: 1}
+}
+
+.car-section {
+    position: relative;
+}
+
+.car-section div {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+.car-section div h1 {
+    width: 100%;
+    font-size: 2rem;
+}
+.car-section p {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.text-section {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.text-section h5 {
+    margin-bottom: 1rem;
+}
+
+.text-section h1 {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text-section p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.more {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-section .view-offers {
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    color: #fff;
+    background-color: red;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    border: 0.1rem solid #fff;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+
+.text-section .explore {
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    color: #333;
+    background-color: transparent;
+    font-size: 1rem;
+    margin: 1rem auto;
+    padding: 1rem 0.5rem;
+    border: 0.1rem solid #333;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+.toyota-info {
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+.info-1, 
+.info-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box {
+    width: 20rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.box i {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: red;
+}
+
+        /* CARS ON SALE */
+.minivan-head,
+.trucks-head,
+.crossovers-suvs-head,
+.hybrid-fuel-cells-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid #fff;
+    background-color: rgb(17, 15, 15);
+    color: #fff;
+}
+
+.minivan-head h1,
+.trucks-head h1,
+.crossovers-suvs-head h1,
+.hybrid-fuel-cells h1 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.minivan-head i,
+.trucks-head i,
+.crossovers-suvs-head i,
+.hybrid-fuel-cells i {
+    cursor: pointer;
+}
+
+.minivan-body,
+.trucks-body,
+.crossovers-suvs-body,
+.hybrid-fuel-cells-body {
+    width: 100%;
+}
+
+
+.minivan-body h3,
+.trucks-body h3,
+.crossovers-suvs-body h3,
+.hybrid-fuel-cells-body h3 {
+    padding: 1rem 3rem;
+}
+
+.car-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.car-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.car-img figcaption {
+    text-align: center;
+}
+
+.info {
+    padding: 2rem 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+        /* DISCOVER TOYOTA */
+.discover-toyota {
+    padding: 10% 0;
+}
+
+.discover-h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.discover-links {
+    display: flex;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.discover-li {
+    width: 25%;
+    font-size: 0.8rem;
+}
+
+.discover-li span {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid red;
+}
+
+.featured-img,
+.community-img,
+.family-img,
+.line-up-img,
+.toyota-care-img,
+.insurance-img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}
+
+.featured-img div,
+.community-img div,
+.family-img div,
+.line-up-img div,
+.toyota-care-img div,
+.insurance-img div {
+    background-color: black;
+    color: #fff;
+    padding: 1%;
+    text-align: center;
+    width: 6rem;
+    border-radius: 20%;
+    position: absolute;
+    bottom: 2%;
+    right: 3%;
+    cursor: pointer;
+}
+
+
+.featured-img img,
+.community-img img,
+.family-img img,
+.line-up-img img,
+.toyota-care-img img,
+.insurance-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.featured-vehicle,
+.toyota-community,
+.toyota-family,
+.line-up-brochure,
+.toyota-care,
+.toyota-insurance {
+    width: 100%;
+    padding: 2rem 1rem;
+}
+
+.featured-vehicle h3,
+.toyota-community h3,
+.toyota-family h3,
+.line-up-brochure h3,
+.toyota-care h3,
+.toyota-insurance h3 {
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+.featured-vehicle h1,
+.toyota-community h1,
+.toyota-family h1,
+.line-up-brochure h1,
+.toyota-care h1,
+.toyota-insurance h1 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.featured-vehicle p,
+.toyota-community p,
+.toyota-family p,
+.line-up-brochure p,
+.toyota-care p,
+.toyota-insurance p {
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.featured-vehicle a,
+.toyota-community a,
+.toyota-family a,
+.line-up-brochure a,
+.toyota-care a,
+.toyota-insurance a {
+    text-decoration: none;
+    color: red;
+}
+
+.view-more {
+    margin: 0 auto;
+    width: 12rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: transparent;
+    border: .1rem solid #333;
+    border-radius: 3rem; 
+    cursor: pointer;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+}
+
+.request {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.request .div-1 {
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    border: .1rem solid red;
+    border-radius: 3rem; 
+    cursor: pointer;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    margin-bottom: 0.5rem;
+}
+
+.request .div-2 {
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
+    background-color: #fff;
+    color: #333;
+    border: .1rem solid rgb(197, 185, 185);
+    border-radius: 3rem; 
+    cursor: pointer;
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s;
+    margin-bottom: 0.5rem;
+}
+
+.linksNav i {
+     cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+}
+.footer-logo {
+    width: 100%;
+}
+
+.footer-directory-logo {
+    width: 100%;
+    height: 3rem;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo p {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-toyota-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    margin: 2rem 2rem;
+}
+
+.footer-toyota-logo img {
+    width: 100%;
+    height: 100%;
+    margin-right: 0.5rem;
+}
+
+.footer-usa-logo {
+    margin-left: 1rem;
+    display: flex;
+    width: 4.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+    border-left: 3px solid #333;
+}
+
+.footer-usa-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.social {
+    width: 100%;
+    margin: 1.5rem auto;
+}
+
+.socials {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    transition: transform 0.2s ease-in;
+}
+
+.socials img {
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.socials img:hover {
+    transform: translateY(-15px);
+}
+
+.footer-txt {
+    padding: 1.5rem 2rem;
+}
+
+.cookie h1 {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.cookie p {
+    margin: 2rem auto;
+    font-size: 0.8rem;
+}
+
+.footer-nav ul {
+    display: flex;
+    margin: 1rem 0;
+} 
+
+.footer-nav ul li {
+    list-style: none;
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    border-right: 1px solid #333;
+}
+
+.footer-nav ul li:last-child {
+    border-right: none;
+}
+
+.copy-right p {
+    line-height: 2rem;
+    font-size: 0.8rem;
+}
+            /* End of Toyota Cars Page Styles */
+
+            /*--------- RESPONSIVE STYLES -----------*/
+
+@media screen and (max-width: 800px) {
+    
+    .shoppingToolsHead,
+    .helpfulLinksHead,
+    .helpHead,
+    .aboutToyotaHead,
+    .toyotaLanguageHead,
+    .vehiclesHead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        width: 100%;
+        height: 4rem;
+        border-bottom: 2px solid rgb(151, 138, 138);
+        background-color: rgb(228, 225, 225);
+    }
+
+    .shoppingToolsHead i,
+    .helpfulLinksHead i,
+    .helpHead i,
+    .aboutToyotaHead i,
+    .toyotaLanguageHead i,
+    .vehiclesHead i {
+        color: red;
+        font-size: 1.5rem;
+    }
+
+    .shoppingToolsNav,
+    .helpfulLinksNav,
+    .helpNav,
+    .aboutToyotaNav,
+    .toyotaLanguageNav,
+    .vehiclesNav {
+        display: none;
+        margin-right: 1rem;
+    }
+
+    .shoppingToolsNav ul li,
+    .helpfulLinksNav ul li,
+    .helpNav ul li,
+    .aboutToyotaNav ul li,
+    .toyotaLanguageNav ul li,
+    .vehiclesNav ul li {
+        margin: 1.5rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid grey;
+    }
+}
+
+@media screen and (min-width: 600px) {
+        
+        .more {
+            display: flex;
+        }
+
+        .discover-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .featuredVehicle,
+        .community,
+        .toyotaFamily,
+        .lineUpBrochure,
+        .toyotaCare,
+        .toyotaInsurance {
+            width: 40%;
+        }
+
+        .request {
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        
+}
+
+@media screen and (min-width: 800px) {
+
+    .request {
+        display: none;
+    }
+
+    .linksNav {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        background: rgb(224, 224, 253);
+    }
+
+    .linksNav i {
+        display: none;
+    }
+
+    .shoppingTools,
+    .vehicles,
+    .helpfulLinks,
+    .help,
+    .aboutToyota,
+    .toyotaLanguage {
+        width: 30%;
+        margin: 1rem 0.5rem;
+    }
+
+
+    .shoppingToolsHead,
+    .vehiclesHead,
+    .helpfulLinksHead,
+    .helpHead,
+    .aboutToyotaHead,
+    .toyotaLanguageHead {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+    }
+
+    .shoppingToolsHead span,
+    .helpfulLinksHead span,
+    .helpHead span,
+    .aboutToyotaHead span,
+    .toyotaLanguageHead span,
+    .vehiclesHead span {
+        padding-bottom: 0.2rem;
+        font-size: 1.2rem;
+}
+
+    .shoppingToolsNav,
+    .helpfulLinksNav,
+    .helpNav,
+    .aboutToyotaNav,
+    .toyotaLanguageNav,
+    .vehiclesNav {
+        display: block;
+    }
+
+    .shoppingToolsNav ul li,
+    .helpfulLinksNav ul li,
+    .helpNav ul li,
+    .aboutToyotaNav ul li,
+    .toyotaLanguageNav ul li,
+    .vehiclesNav ul li {
+        margin: 1rem auto;
+        padding: 0 0.5rem;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (min-width: 1100px) {
+
+    .toyota-info {
+        margin: 0 auto;
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .grid-box1 {
+        grid-column: 1 / 2;
+    }
+
+    .grid-box1 {
+        grid-column: 2 / 3;
+    }
+
+    .grid-box1 {
+        grid-column: 3 / 4;
+    }
+
+    .grid-box1 {
+        grid-column: 4 / -1;
+    }
+
+    .grid-box1,
+    .grid-box2,
+    .grid-box3,
+    .grid-box4 {
+        width: 17rem;
+    }
+
+    .discover-grid {
+        margin: 0 auto;
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    .featuredVehicle {
+        width: 80%;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .community {
+        width: 80%;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .toyotaFamily {
+        width: 80%;
+        grid-column: 3 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .lineUpBrochure {
+        width: 80%;
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+    }
+
+    .toyotaCare {
+        width: 80%;
+        grid-column: 2 / 3;
+        grid-row: 2 / -1;
+    }
+
+    .toyotaInsurance {
+        width: 80%;
+        grid-column: 3 / -1;
+        grid-row: 2 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .toyota-header-title {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+
+    .toyota-nav {
+        width: 100%;
+        height: 3rem;
+        position: fixed;
+        top: 4rem;
+    }
+    
+    .toyota-nav ul {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .toyota-nav ul li {
+        width: 100%;
+        text-align: center;
+        margin-right: 1px;
+        font-size: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+}
+
+
+
+
+
+
+

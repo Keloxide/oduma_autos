@@ -1,0 +1,765 @@
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Verdana, sans-serif; 
+    margin:0;
+    padding: 0;
+}
+
+
+/* Ford Cars Page Styles */
+.ford-wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+.ford-header-container {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+.ford-header {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    background-color: #424e64;
+}
+
+.ford-menu-btn {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    padding: 0.5rem 0.5rem;
+    margin-left: 1rem;
+}
+
+.ford-menu-btn h1 {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.ford-header-title {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ford-header-title h1{
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 2rem;
+}
+
+.ford-header-title h2 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1rem;
+}
+
+.ford-header-input {
+    margin-top: 0.5rem;
+    margin-left: auto;
+    margin-right: 1rem;
+    
+}
+
+.ford-header-input form {
+    display: flex;
+}
+
+.ford-header-input input {
+    width: 5rem;
+    height: 2rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    background-color: #bbc2ca;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15%;
+}
+
+.ford-header-input button {
+    width: 2rem;
+    height: 1.8rem;
+    background-color: #bbc2ca;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 15%;
+    margin-top: 2px;
+}
+
+.ford-nav {
+    width: 100%;
+    height: 2.5rem;
+    position: fixed;
+    top: 4rem;
+    background-color: #bbc2ca;
+}
+
+.ford-nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ford-nav ul li {
+    width: 100%;
+    text-align: center;
+    margin-right: 1px;
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    list-style: none;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+.ford-nav ul li:hover {
+    background-color: #424e64;
+    color: #fff;
+}
+
+.ford-nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.ford-content {
+    width: 100%;
+    margin-top: 6.5rem;
+}
+
+.ford-shw {
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ford-shw h1 {
+    font-size: 1.5rem;
+}
+
+.ford-sort-wrap {
+    margin-left: 70%;
+    width: 20%;
+    border: 2px solid #fff;
+}
+
+.ford-sort {
+    display: flex;
+    padding: 10%;
+    font-size: 1.3rem;
+    background-color: #bbc2ca;
+}
+.ford-sort i {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.ford-sort-ul li {
+    display: block;
+    cursor: pointer;
+    border-bottom: 2px solid #fff;
+    padding: 10%;
+    font-size: 1rem;
+    list-style: none;
+    background-color: #bbc2ca;
+}
+
+.ford-sort-ul li:hover {
+    color: green;
+}
+
+.ford-showroom h1 {
+    color: #424e64;
+    font-size: 2.5rem;
+    
+}
+
+.ford-vehicles h1 {
+    color: #bbc2ca;
+    font-size: 1.5rem; 
+}
+
+
+.crossover-head,
+.truck-head,
+.saloon-head,
+.electric-head,
+.commercial-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    width: 100%;
+    height: 4rem;
+    border-bottom: 2px solid #fff;
+    background-color: rgb(17, 15, 15);
+    color: #fff;
+}
+
+.crossover-head h1,
+.truck-head h1,
+.saloon-head h1,
+.electric-head h1,
+.commercial-head h1 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.crossover-head i,
+.truck-head i,
+.saloon-head i,
+.electric-head i,
+.commercial-head i {
+    cursor: pointer;
+}
+
+
+
+.ford-cars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+}
+
+.ford-cars figure {
+    width: 100%; 
+    object-fit: cover;
+}
+
+.ford-cars figure img {
+    width: 100%;
+}
+
+.ford-cars figcaption {
+    text-align: center;
+    color: skyblue;
+    margin: 0.5rem 0;
+}
+
+.ford-cars p {
+   text-align: center;
+   
+}
+
+ /* CROSSOVERS CAROUSEL */
+ .crossovers {
+     position: relative;
+ }
+
+ .crossover-cars ,
+ .crossover-hidden {
+     position: relative;
+     display: none;
+     z-index: -1;
+ }
+ 
+ .crossover-visible {
+     display: block;
+ }
+
+
+ .crossover-arrow {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% auto;
+}
+
+.crossover-arrow .crossover-prev {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: rgba(34, 34, 240, 0.973);
+    border: 1px solid rgba(34, 34, 240, 0.973);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.crossover-arrow .crossover-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: rgba(34, 34, 240, 0.973);
+    border: 1px solid rgba(34, 34, 240, 0.973);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* TRUCK CAROUSEL */
+.truck {
+    position: relative;
+}
+
+.trucks ,
+.truck-hidden {
+    position: relative;
+    display: none;
+    z-index: -1;
+}
+
+.truck-visible {
+    display: block;
+}
+
+
+.truck-arrow {
+   display: flex;
+   justify-content: space-between;
+   margin: 2% auto;
+}
+
+.truck-arrow .truck-prev {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.truck-arrow .truck-next {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+
+/* SALOON CAROUSEL */
+.saloon {
+    position: relative;
+}
+
+.saloons ,
+.saloon-hidden {
+    position: relative;
+    display: none;
+    z-index: -1;
+}
+
+.saloon-visible {
+    display: block;
+}
+
+
+.saloon-arrow {
+   display: flex;
+   justify-content: space-between;
+   margin: 2% auto;
+}
+
+.saloon-arrow .saloon-prev {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.saloon-arrow .saloon-next {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+/* ELECTRIC CAROUSEL */
+.electric-car {
+    position: relative;
+}
+
+.electric-cars ,
+.electric-hidden {
+    position: relative;
+    display: none;
+    z-index: -1;
+}
+
+.electric-visible {
+    display: block;
+}
+
+
+.electric-arrow {
+   display: flex;
+   justify-content: space-between;
+   margin: 2% auto;
+}
+
+.electric-arrow .electric-prev {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.electric-arrow .electric-next {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+/* COMMERCIAL CAROUSEL */
+.commercial {
+    position: relative;
+}
+
+.commercial-cars ,
+.commercial-hidden {
+    position: relative;
+    display: none;
+    z-index: -1;
+}
+
+.commercial-visible {
+    display: block;
+}
+
+
+.commercial-arrow {
+   display: flex;
+   justify-content: space-between;
+   margin: 2% auto;
+}
+
+.commercial-arrow .commercial-prev {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-left: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+.commercial-arrow .commercial-next {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+   margin-right: 1rem;
+   width: 2.5rem;
+   height: 2.5rem;
+   color: rgba(34, 34, 240, 0.973);
+   border: 1px solid rgba(34, 34, 240, 0.973);
+   border-radius: 50%;
+   cursor: pointer;
+}
+
+
+
+.ford-selection {
+    margin: 2% 20%;
+}
+
+.model-year h1 {
+    font-size: 1.3rem;
+}
+
+.model-year-btn {
+    width: 100%;
+    display: flex;
+    margin: 2rem auto;
+}
+
+.model-year-btn button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1rem;
+    margin: 2% 2%;
+}
+
+.market {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #bbc2ca;
+}
+
+.market-chk-box {
+    margin-top: 2rem;
+}
+
+.market-chk-box div {
+    margin-bottom: 1rem;
+}
+
+.power-source {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #bbc2ca;
+}
+
+.power-src-chk-box {
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+}
+
+.power-col-1 div {
+    margin-bottom: 1rem;
+}
+
+.power-col-2 {
+    margin-left: auto;
+}
+
+.power-col-2 div {
+    margin-bottom: 1rem;
+}
+
+.body-styl-chk-box {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    width: 100%;
+    display: flex;
+}
+
+.body-col-1 div {
+    margin-bottom: 1rem;
+}
+
+.body-col-2 {
+    margin-left: auto;
+}
+
+.body-col-2 div {
+    margin-bottom: 1rem;
+}
+
+.body-style {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid #bbc2ca;
+}
+
+.reset-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    align-items: center;
+}
+
+.reset-btn button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1rem;
+    margin: 2% 2%;
+}
+
+.ford-footer {
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: #424e64;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-1,
+.nav-2 {
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+}
+
+.nav-1 ul li {
+    margin: 1rem 0;
+}
+
+.nav-2 ul li {
+    margin: 1rem 0;
+}
+
+.ford-footer a {
+    color: #a5a5a5;
+}
+
+.ford-footer ul li {
+    list-style: none;
+}
+
+.enquires {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.enquires p {
+    margin-right: 2rem;
+}
+
+.enquires a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+        /*--------- RESPONSIVE STYLES -----------*/
+
+@media (min-width: 800px) {
+
+    .ford-content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: min-content 2fr;
+    }
+
+    .ford-shw {
+        height: 5rem;
+        margin-bottom: 0.5rem;
+        color: #fff;
+        background-color:  #cbdcf0;
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    .ford-selection {
+        margin: 0;
+        padding: 0 0.5rem;
+        grid-column: 1 / 2;
+        grid-row: 2 / -1;
+        border-right: 2px solid #bbc2ca;
+    }
+
+    .ford-showroom {
+        grid-column: 2 / -1;
+        grid-row: 2 / -1;
+    }
+
+
+
+    .ford-sort-wrap {
+        margin-left: auto;
+        width: 10rem;
+        border: 2px solid #fff;
+    }
+
+    .power-src-chk-box .gas,
+    .power-src-chk-box .hybrid,
+    .power-src-chk-box .electric,
+    .power-src-chk-box .eco-boost,
+    .power-src-chk-box .plug-in-hybrid {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .body-styl-chk-box .sedan,
+    .body-styl-chk-box .convertible,
+    .body-styl-chk-box .van,
+    .body-styl-chk-box .trucks,
+    .body-styl-chk-box .hatch-back,
+    .body-styl-chk-box .suv,
+    .body-styl-chk-box .crossover {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-1 ul,
+    .nav-2 ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 2rem;
+    }
+
+    .footer-nav h1 {
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+
+    .footer-nav ul li {
+        margin-right: 5%;
+        margin-bottom: 2%;
+    }
+
+}
